@@ -1,0 +1,1 @@
+http://www.19lou.com/api/thread/getThreadPage?client_id=100&client_secret=accessTest7118jqq54113accessTest&uid=100&fid=26

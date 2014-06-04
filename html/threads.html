@@ -1,0 +1,40 @@
+<div class='row'>
+	<h3>{{title}}</h3>
+</div>
+<div class='row'>
+	<table class='table'>
+		<thead>
+			<tr>
+				<th>
+					标题
+				</th>
+				<th>
+					发帖人
+				</th>
+				<th>
+					发帖时间
+				</th>
+				<th>
+					回帖时间
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="thread in threads">
+				<td>
+						<a ng-href="#/thread/{{thread.id}}">{{thread.subject | titleFilter}}</a>
+				</td>
+				<td>
+						{{thread.author}}
+				</td>
+				<td>
+						{{thread.createdAt}}
+				</td>
+				<td>
+						{{thread.repliedAt}}
+				</td>
+			</tr>
+		</tbody>
+	<table>
+	
+</div>
